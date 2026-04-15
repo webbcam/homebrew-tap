@@ -5,20 +5,20 @@
 class GitAutocommit < Formula
   desc "AI-powered automatic git commit message generator"
   homepage "https://github.com/webbcam/git-autocommit"
-  version "0.3.0"
+  version "0.4.0"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/webbcam/git-autocommit/releases/download/v0.3.0/git-autocommit_0.3.0_darwin_amd64.tar.gz"
-    sha256 "662f450e57d90b62fb09a3612476264fdad8380bd33fe3b6009fba08f9956b08"
+    url "https://github.com/webbcam/git-autocommit/releases/download/v0.4.0/git-autocommit_0.4.0_darwin_amd64.tar.gz"
+    sha256 "798fefea7cbe1cae548c1a035bb9c4fd295a2710a18f18d1c2c2b10e000f2a46"
 
     define_method(:install) do
       bin.install "git-autocommit"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/webbcam/git-autocommit/releases/download/v0.3.0/git-autocommit_0.3.0_darwin_arm64.tar.gz"
-    sha256 "8c3b70862336a5e57c971b85b220725330323ef43d28dd795d58d788ddaf0ce0"
+    url "https://github.com/webbcam/git-autocommit/releases/download/v0.4.0/git-autocommit_0.4.0_darwin_arm64.tar.gz"
+    sha256 "2b8320a65d00f8fa4ca85adf71715a6485e8a80547931192d8d14f97f8659d48"
 
     define_method(:install) do
       bin.install "git-autocommit"
