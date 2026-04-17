@@ -5,20 +5,20 @@
 class Amzn < Formula
   desc "Browse and filter your Amazon orders from the terminal"
   homepage "https://github.com/webbcam/amzn"
-  version "0.1.0"
+  version "0.1.1"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/webbcam/amzn/releases/download/v0.1.0/amzn_0.1.0_darwin_amd64.tar.gz"
-    sha256 "33a2044bcc4e4668b6a79759d15643fb24b40c8e52f9787e0a9a86ad6d45cd04"
+    url "https://github.com/webbcam/amzn/releases/download/v0.1.1/amzn_0.1.1_darwin_amd64.tar.gz"
+    sha256 "ab94411b6c586e9c2d6539275e1cb55792b952b5b356431b338d73cf046c3cd5"
 
     define_method(:install) do
       bin.install "amzn"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/webbcam/amzn/releases/download/v0.1.0/amzn_0.1.0_darwin_arm64.tar.gz"
-    sha256 "d4ca5596d356284e4192d6df746b31e7b82944a219db4121016896026e566dad"
+    url "https://github.com/webbcam/amzn/releases/download/v0.1.1/amzn_0.1.1_darwin_arm64.tar.gz"
+    sha256 "c74008615b0ac62fb01f1aff7c0df78414ef2f184e49332eb8765652a4e007b9"
 
     define_method(:install) do
       bin.install "amzn"
