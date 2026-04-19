@@ -9,8 +9,7 @@ class Amzn < Formula
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/webbcam/amzn/releases/download/v0.2.0/amzn_0.2.0_darwin_amd64.tar.gz"
-    using: GitHubPrivateRepositoryReleaseDownloadStrategy
+    url "https://github.com/webbcam/amzn/releases/download/v0.2.0/amzn_0.2.0_darwin_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
     sha256 "66582a4f2ce8b58eebc06554aab8cb43ba614b1b57ebce2d97fa3aa58485a86a"
 
     define_method(:install) do
@@ -18,8 +17,7 @@ class Amzn < Formula
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/webbcam/amzn/releases/download/v0.2.0/amzn_0.2.0_darwin_arm64.tar.gz"
-    using: GitHubPrivateRepositoryReleaseDownloadStrategy
+    url "https://github.com/webbcam/amzn/releases/download/v0.2.0/amzn_0.2.0_darwin_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
     sha256 "1eb63088c24d7e2eea00c066bb47b6581c8083e05c36d86a5cc1bf784d623856"
 
     define_method(:install) do
